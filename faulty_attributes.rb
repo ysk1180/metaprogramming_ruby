@@ -4,8 +4,8 @@ class Sample
   def set_name
     name = 'デフォルト太郎' # ローカル変数 name への代入になっている
     # 以下どちらかにすれば予期した挙動となる
-    # self.name
-    # @name
+    # self.name = 'デフォルト太郎'
+    # @name = 'デフォルト太郎'
   end
 end
 
