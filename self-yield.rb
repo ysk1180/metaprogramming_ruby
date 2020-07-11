@@ -1,9 +1,11 @@
 # よくあるコード
 class PC
+  attr_writer :name, :os, :price
+
   def initialize(name, os, price)
-    @name = name
-    @os = os
-    @price = price
+    self.name = name
+    self.os = os
+    self.price = price
   end
 end
 
@@ -34,9 +36,9 @@ class PC
     if block_given?
       yield self
     else
-      @name = name
-      @os = os
-      @price = price
+      self.name = name
+      self.os = os
+      self.price = price
     end
   end
 end
